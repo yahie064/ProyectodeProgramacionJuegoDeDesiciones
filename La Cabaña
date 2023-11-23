@@ -61,6 +61,16 @@ int main()
                 cout <<"un fuerte arañazo, tu caes al piso, obervas un trozo de madera que hay en el piso, lo sujetas  " << endl;
                 cout <<"y logras darle un golpe a la cosa que te ataco, dejandolo tirado en el suelo, te levantas " << endl;
                 cout <<"rapidamente del suelo y ... " << endl;
+                    do{
+                      cout << endl;
+                      cout <<"Selecciona la letra del inciso que decidas "<< "       Nivel de vida actual " << vida << endl;
+                      cout <<"a. Corres hacia la direccion del grito para poder auxiliar a tu pareja " << endl;
+                      cout <<"b. Intentas llamas al numero de emergencia  " << endl;
+                      cout <<"c. Comienzas a gritar " << endl;
+                      cout <<"d. Te da miedo y corres del lugar " << endl;
+                      cin >> opcion;
+                    }while (opcion !='a' && opcion !='A' && opcion !='b' && opcion !='B' && opcion !='c' && opcion !='C');
+                
 
                 break;
                 //opcion b)
