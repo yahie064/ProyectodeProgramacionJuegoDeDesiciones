@@ -58,7 +58,7 @@ int main()
                 case 'a':
                 cout <<"Sales de la cabaña para dirigirte a la caja electrica, cuando llegas te das cuenta  " << endl;
                 cout <<"la caja esta totalmente destrozada, de repente alguien te toma por la espalda y te da  " << endl;
-                cout <<"un puñalada en el brazo, tu caes al piso, obervas un trozo de madera que hay en el piso, lo sujetas  " << endl;
+                cout <<"un puñalada en el abdomen, tu caes al piso, obervas un trozo de madera que hay en el piso, lo sujetas  " << endl;
                 cout <<"y logras darle un golpe a la cosa que te ataco, dejandolo tirado en el suelo, te levantas " << endl;
                 cout <<"rapidamente del suelo y ... " << endl;
                 
@@ -73,11 +73,14 @@ int main()
                       switch(opcion){
                           //opcion a)
                           case 'a':
-                          cout << "Rapidamente corres hacia el bosque, "
+                          cout << "Rapidamente corres hacia el bosque, sin embargo, no conoces el lugar y esta muy oscuro para poder ver. " << endl;
+                          cout << "corres por unos cuantos minutos mas y a lo lejos logras ver una carretera. Asi que te dirijes para alla, " << endl;
+                          cout << "y solmente te desplomas a las orillas de la carretera. Has muerto por no atender la herida que te dejo el asesino" << endl;
                           break;
                           
                           //opcion b)
                           case 'b':
+                          cout << "Rapidamente corres hacia hacia la cabaña " << endl;
                           break;
                           
                           //opcion c)
