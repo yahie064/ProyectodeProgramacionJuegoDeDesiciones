@@ -56,19 +56,46 @@ int main()
             switch (opcion){
                 //opcion a) 
                 case 'a':
-                cout <<"Sales de la cabaña para dirigirte a la caja electrica, cuando llegas te das cuenta que  " << endl;
-                cout <<"la caja esta totalmente destrozada, de repente algo te toma por la espalda y te da  " << endl;
-                cout <<"un fuerte arañazo, tu caes al piso, obervas un trozo de madera que hay en el suelo, lo sujetas  " << endl;
+                cout <<"Sales de la cabaña para dirigirte a la caja electrica, cuando llegas te das cuenta  " << endl;
+                cout <<"la caja esta totalmente destrozada, de repente alguien te toma por la espalda y te da  " << endl;
+                cout <<"un puñalada en el brazo, tu caes al piso, obervas un trozo de madera que hay en el piso, lo sujetas  " << endl;
                 cout <<"y logras darle un golpe a la cosa que te ataco, dejandolo tirado en el suelo, te levantas " << endl;
                 cout <<"rapidamente del suelo y ... " << endl;
-                    do{
+                
+                do{
                       cout << endl;
-                      cout <<"Selecciona la letra del inciso que decidas "<< "       Nivel de vida actual " << vida-50 << endl;
+                      cout <<"Selecciona la letra del inciso que decidas "<< "       Nivel de vida actual " << vida-30 << endl;
                       cout <<"a. Corres hacia el bosque " << endl;
                       cout <<"b. Regresas a la cabaña " << endl;
                       cout <<"c. No haces nada " << endl;
                       cin >> opcion;
-                    }while (opcion !='a' && opcion !='A' && opcion !='b' && opcion !='B' && opcion !='c' && opcion !='C');
+                      
+                      switch(opcion){
+                          //opcion a)
+                          case 'a':
+                          cout << "Rapidamente corres hacia el bosque, "
+                          break;
+                          
+                          //opcion b)
+                          case 'b':
+                          break;
+                          
+                          //opcion c)
+                          case 'c':
+                          cout <<"Selecciona la letra del inciso que decidas "<< "       Nivel de vida actual " << vida-100 << endl;
+                          cout << "Te paralizo el miedo y desaprovechaste la opotunidad para ecapar, el asesino logra levantarse " << endl;
+                          cout << "del suelo y se avanza hacia ti acabando con tu vida. " << endl;
+                          cout << "Has muerto " << endl;
+                          break;
+                          
+                          default:
+                          cout << "Opcion invalida, intentalo nuevamente " << endl;
+                      }
+                }while (opcion !='a' && opcion !='A' && opcion !='b' && opcion !='B' && opcion !='c' && opcion !='C');
+                
+                
+                
+                
                 
 
                 break;
@@ -96,8 +123,8 @@ int main()
             cout << endl;
             cout <<"Selecciona la letra del inciso que decidas "<< "       Nivel de vida actual " << vida << endl;
             cout <<"a. Corres hacia la direccion del grito para poder auxiliar a tu pareja " << endl;
-            cout <<"b. Comienzas a gritar " << endl;
-            cout <<"c. Te da miedo y corres del lugar " << endl;
+            cout <<"b. Intentas llamas al numero de emergencia  " << endl;
+            cout <<"c. Comienzas a gritar " << endl;
             cin >> opcion;
         }while (opcion !='a' && opcion !='A' && opcion !='b' && opcion !='B' && opcion !='c' && opcion !='C');
         
@@ -111,6 +138,7 @@ int main()
         
     }else if (opcion == 'n'){
         cout << "Vuelva pronto" << endl;
+        
         
     }else{
         cout << "Opcion invalida, intentalo de nuevo " << endl;
