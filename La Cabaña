@@ -663,6 +663,7 @@ int main()
         //opcion d) Te enojas con el/ella por no regresar y te vas del lugar
         }else if (opcion == 'd'){
             cout << "Felicidades, lograste sobrevivir con el "<< vida << " de vida" << endl;
+            cout << "Sin embargo, falto resolver un misterio " << endl;
         
         }else if (opcion == 'n'){
             cout << "Vuelva pronto" << endl;
